@@ -33,4 +33,16 @@ MyExampleComponent.propTypes = {
   exampleReactElement: PropTypes.element,
 }
 
+We can also declare more complex property types as well. For instance, we can declare that a prop is an array full of a specific type of entries:
+  ...
+  exampleArrayOfNumbers: PropTypes.arrayOf(PropTypes.number),
+  exampleArrayOfStrings: PropTypes.arrayOf(PropTypes.string),
+  ...
+
+We can also declare that a prop is an instance of a class:
+
+  ...
+  exampleClassTypeProp: PropTypes.instanceOf(ExampleClassName),
+  ...
+
 */}
